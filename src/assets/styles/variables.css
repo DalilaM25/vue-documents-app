@@ -1,0 +1,34 @@
+:root {
+  /* Цвета */
+  --color-black: #000000;
+  --color-gray-dark: #212529;
+  --color-gray-medium: #6C757D;
+  --color-primary: #0D6EFD;
+  --color-secondary: #DC3545;
+  --color-background: #FFFFFF;
+  --color-hover: #F8F9FA;
+
+  /* Шрифты */
+  --font-family: 'Montserrat', sans-serif;
+
+  /* Типографика */
+  --header-font-size: 32px;
+  --header-font-weight: 700;
+  --header-line-height: 100%;
+
+  --content-title-font-size: 16px;
+  --content-title-font-weight: 600;
+  --content-title-line-height: 140%;
+
+  --body-font-size: 14px;
+  --body-font-weight: 400;
+  --body-line-height: 100%;
+
+  --card-title-font-size: 14px;
+  --card-title-font-weight: 600;
+  --card-title-line-height: 100%;
+
+  /* Прочие */
+  --border-radius: 8px;
+  --transition: all 0.2s ease;
+}

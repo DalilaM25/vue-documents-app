@@ -1,11 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import UiButton from './components/ui/UiButton.vue';
+import UiErrorMessage from './components/ui/UiErrorMessage.vue';
+import UiInput from './components/ui/UiInput.vue';
+import UiSpinner from './components/ui/UiSpinner.vue';
+
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <UiButton variant="secondary" disabled>Скачать</UiButton>
+  <UiErrorMessage>Ошибка ошибок ошибочная </UiErrorMessage>
+  <UiInput placeholder="dshgkjshjkghsjk"></UiInput>
+  <UiSpinner></UiSpinner>
 </template>
 
 <style scoped></style>

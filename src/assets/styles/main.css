@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import './variables.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--color-background);
+  color: var(--color-black);
+}
+
+.header-title {
+  font-size: var(--header-font-size);
+  font-weight: var(--header-font-weight);
+  line-height: var(--header-line-height);
+  color: var(--color-black);
+}
+
+.content-title {
+  font-size: var(--content-title-font-size);
+  font-weight: var(--content-title-font-weight);
+  line-height: var(--content-title-line-height);
+  color: var(--color-black);
+}
+
+.body-text {
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--body-line-height);
+  color: var(--color-gray-medium);
+}
+
+.card-title {
+  font-size: var(--card-title-font-size);
+  font-weight: var(--card-title-font-weight);
+  line-height: var(--card-title-line-height);
+  color: var(--color-gray-dark);
+}
