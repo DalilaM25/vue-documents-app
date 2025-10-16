@@ -11,22 +11,22 @@
 
 <script setup lang="ts">
 interface Props {
-  modelValue?: string;
-  type?: string;
-  placeholder?: string;
-  disabled?: boolean;
+  modelValue?: string
+  type?: string
+  placeholder?: string
+  disabled?: boolean
 }
 
 withDefaults(defineProps<Props>(), {
   modelValue: '',
   type: 'text',
   placeholder: '',
-  disabled: false
-});
+  disabled: false,
+})
 
 defineEmits<{
-  'update:modelValue': [value: string];
-}>();
+  'update:modelValue': [value: string]
+}>()
 </script>
 
 <style scoped>
@@ -36,7 +36,7 @@ defineEmits<{
   padding: 16px 24px;
   gap: 16px;
   border-radius: var(--border-radius);
-  border: 1.5px solid #E9ECEF;
+  border: 1.5px solid #e9ecef;
   background: var(--color-background);
   font-family: var(--font-family);
   font-size: var(--body-font-size);

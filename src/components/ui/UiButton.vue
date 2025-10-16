@@ -1,10 +1,6 @@
 <template>
   <button
-    :class="[
-      'ui-button',
-      `ui-button--${variant}`,
-      { 'ui-button--disabled': disabled }
-    ]"
+    :class="['ui-button', `ui-button--${variant}`, { 'ui-button--disabled': disabled }]"
     :disabled="disabled"
     @click="$emit('click')"
   >
@@ -14,20 +10,20 @@
 
 <script setup lang="ts">
 interface Props {
-  label?: string;
-  variant?: 'primary' | 'secondary';
-  disabled?: boolean;
+  label?: string
+  variant?: 'primary' | 'secondary'
+  disabled?: boolean
 }
 
 withDefaults(defineProps<Props>(), {
   label: '',
   variant: 'primary',
-  disabled: false
-});
+  disabled: false,
+})
 
 defineEmits<{
-  click: [];
-}>();
+  click: []
+}>()
 </script>
 
 <style scoped>

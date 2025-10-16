@@ -11,6 +11,7 @@ body {
   font-family: var(--font-family);
   background: var(--color-background);
   color: var(--color-black);
+  padding: 3.6vw;
 }
 
 .header-title {

@@ -6,12 +6,12 @@
 
 <script setup lang="ts">
 interface Props {
-  message?: string;
+  message?: string
 }
 
 withDefaults(defineProps<Props>(), {
-  message: ''
-});
+  message: '',
+})
 </script>
 
 <style scoped>
