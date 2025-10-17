@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2.6vw;
+  margin-bottom: 2.4vw;
 }
 .header__title {
   color: var(--color-black);

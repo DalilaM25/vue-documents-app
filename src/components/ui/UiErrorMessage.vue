@@ -21,7 +21,7 @@ withDefaults(defineProps<Props>(), {
   font-size: var(--body-font-size);
   font-weight: var(--body-font-weight);
   line-height: var(--body-line-height);
-  padding: 12px;
-  margin: 8px 0;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
 }
 </style>

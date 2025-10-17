@@ -10,7 +10,7 @@ export function useDocumentApi() {
       );
 
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        throw new Error(`Ошибка запроса: ${response.status}`)
       }
 
       return await response.json();

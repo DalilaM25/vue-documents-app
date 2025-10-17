@@ -42,18 +42,35 @@ defineEmits<{
 .document-list {
   display: flex;
   flex-direction: column;
+  height: 80%;
+  flex: 1;
 }
 
 .document-list__content {
-  margin-top: 18px;
+  margin-top: 1.1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .document-list__cards {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 1.1rem;
+  overflow-y: scroll;
+  flex: 1;
+  padding-right: 0.4rem;
+}
+.document-list__cards::-webkit-scrollbar {
+  width: 0;
+  display: none;
 }
 
+.document-list__cards {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 .document-list__empty {
   font-family: var(--font-family);
   font-weight: 400;
@@ -61,6 +78,10 @@ defineEmits<{
   line-height: var(--body-line-height);
   color: var(--color-gray-medium);
   text-align: center;
-  padding: 20px;
+  padding: 1.3rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

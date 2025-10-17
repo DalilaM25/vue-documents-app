@@ -11,7 +11,8 @@ body {
   font-family: var(--font-family);
   background: var(--color-background);
   color: var(--color-black);
-  padding: 3.6vw;
+  padding: 3.3vw 3.6vw;
+  min-width: 880px;
 }
 
 .header-title {

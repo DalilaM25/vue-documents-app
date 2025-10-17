@@ -28,7 +28,7 @@ defineEmits<{
 
 <style scoped>
 .ui-button {
-  padding: 8px 16px;
+  padding: 0.4rem 1.7rem;
   border-radius: var(--border-radius);
   border: 1px solid var(--color-primary);
   background: transparent;
@@ -38,7 +38,6 @@ defineEmits<{
   font-family: var(--font-family);
   font-size: var(--body-font-size);
   font-weight: var(--body-font-weight);
-  line-height: var(--body-line-height);
 }
 
 .ui-button--secondary {

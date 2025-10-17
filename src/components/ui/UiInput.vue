@@ -31,17 +31,12 @@ defineEmits<{
 
 <style scoped>
 .ui-input {
-  width: 240px;
-  height: 49px;
-  padding: 16px 24px;
-  gap: 16px;
+  padding: 1rem 1.5rem;
   border-radius: var(--border-radius);
-  border: 1.5px solid #e9ecef;
-  background: var(--color-background);
+  border: 1px solid #e9ecef;
   font-family: var(--font-family);
   font-size: var(--body-font-size);
   font-weight: var(--body-font-weight);
-  line-height: var(--body-line-height);
   color: var(--color-gray-dark);
   transition: var(--transition);
   box-sizing: border-box;

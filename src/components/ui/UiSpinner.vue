@@ -14,8 +14,8 @@
 }
 
 .ui-spinner__circle {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   border: 2px solid #e9ecef;
   border-top: 2px solid var(--color-primary);
   border-radius: 50%;
