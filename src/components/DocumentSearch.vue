@@ -32,6 +32,6 @@ const handleSearch = debounce((query: string) => {
 .document-search {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: clamp(0.75rem, 2vw, 1rem);
 }
 </style>

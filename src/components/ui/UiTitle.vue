@@ -16,8 +16,6 @@ withDefaults(defineProps<Props>(), {
 
 <style scoped>
 .ui-title {
-  color: var(--color-black);
-  font-family: var(--font-family);
   font-size: var(--content-title-font-size);
   font-weight: var(--content-title-font-weight);
 }

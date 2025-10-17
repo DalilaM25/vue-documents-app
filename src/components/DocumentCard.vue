@@ -27,10 +27,9 @@ defineEmits<{
 
 <style scoped>
 .document-card {
-  width: 18vw;
-  height: 4.4rem;
+  width: 100%;
+  height: 100%;
   border-radius: var(--border-radius);
-  background: var(--color-background);
   box-shadow: 0px 0px 10px 0px #0000001a;
   display: flex;
   cursor: pointer;
@@ -56,6 +55,7 @@ defineEmits<{
   flex-direction: column;
   justify-content: center;
   gap: 0.4rem;
+  overflow: hidden;
 }
 
 .document-card--selected .document-card__info {
@@ -64,11 +64,11 @@ defineEmits<{
 }
 
 .document-card__title {
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: var(--card-title-font-size);
   color: var(--color-gray-dark);
   margin: 0;
+  text-overflow: ellipsis;
 }
 
 .document-card--selected .document-card__title {
@@ -76,11 +76,13 @@ defineEmits<{
 }
 
 .document-card__size {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: var(--body-font-size);
   color: var(--color-gray-medium);
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .document-card--selected .document-card__size {

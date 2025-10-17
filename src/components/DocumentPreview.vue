@@ -9,6 +9,8 @@
         :src="document.image"
         :alt="document.name"
         :customClassPlaceholder="'prewiew'"
+        @error="hasValidImage = false"
+        @loaded="hasValidImage = true"
       />
       </div>
       <div class="document-preview__info">
@@ -23,7 +25,7 @@
           <UiButton
             label="Удалить"
             variant="secondary"
-            :disabled="!canDelete"
+            :disabled="!canDelete || !hasValidImage"
             @click="$emit('delete')"
           />
         </div>
@@ -44,6 +46,7 @@ import type { Document } from '@/types/document';
 import UiTitle from '@/components/ui/UiTitle.vue';
 import UiButton from '@/components/ui/UiButton.vue';
 import UiImage from '@/components/ui/UiImage.vue';
+import { ref, watch } from 'vue';
 
 interface Props {
   document?: Document | null;
@@ -59,9 +62,14 @@ defineEmits<{
   download: [];
   delete: [];
 }>();
+
+const hasValidImage = ref(true);
+watch(() => document, () => {
+  hasValidImage.value = true;
+});
 </script>
 
-<style>
+<style scoped>
 .document-preview {
   padding: 2rem 1.5rem;
   height: 100%;
@@ -72,7 +80,6 @@ defineEmits<{
 }
 
 .document-preview__empty {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: var(--body-font-size);
   line-height: var(--body-line-height);
@@ -118,10 +125,14 @@ defineEmits<{
 }
 
 .document-preview__description-text {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: var(--body-font-size);
   color: var(--color-gray-medium);
-  margin: 0;
+}
+
+@media (max-width: 950px) {
+  .document-preview__content{
+    flex-direction: column;
+  }
 }
 </style>

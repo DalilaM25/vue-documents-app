@@ -16,7 +16,7 @@ export const useDocumentStore = defineStore('documents', () => {
   const hasSelectedDocument = computed(() => selectedDocument.value !== null)
 
   const canDeleteDocument = computed(() => {
-    return selectedDocument.value?.image !== undefined && selectedDocument.value?.image !== ''
+    return !!selectedDocument.value?.image && selectedDocument.value.image !== ''
   })
 
   // Actions

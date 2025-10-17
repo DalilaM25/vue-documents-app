@@ -6,6 +6,7 @@
       :alt="alt"
       :class="['ui-image__img', customClassImg]"
       @error="handleError"
+      @load="handleLoad"
     />
     <div
       v-else
@@ -39,8 +40,19 @@ const props = withDefaults(defineProps<Props>(), {
 
 const hasError = ref(false);
 
+const emit = defineEmits<{
+  error: [];
+  loaded: [];
+}>();
+
 const handleError = () => {
   hasError.value = true;
+  emit('error');
+};
+
+const handleLoad = () => {
+  hasError.value = false;
+  emit('loaded');
 };
 
 watch(() => props.src, () => {

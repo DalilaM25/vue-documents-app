@@ -47,7 +47,7 @@ defineEmits<{
 }
 
 .document-list__content {
-  margin-top: 1.1rem;
+  margin-top: clamp(1rem, 2vw, 1.125rem);
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -58,9 +58,8 @@ defineEmits<{
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
-  overflow-y: scroll;
+  overflow-y: auto;
   flex: 1;
-  padding-right: 0.4rem;
 }
 .document-list__cards::-webkit-scrollbar {
   width: 0;
@@ -72,7 +71,6 @@ defineEmits<{
   -ms-overflow-style: none;
 }
 .document-list__empty {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: var(--body-font-size);
   line-height: var(--body-line-height);

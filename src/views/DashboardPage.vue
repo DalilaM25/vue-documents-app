@@ -76,30 +76,27 @@ onMounted(() => {
   width: 100%;
   border-radius: var(--border-radius);
   box-shadow: 0px 0px 10px 0px #0000001a;
-  overflow: hidden;
 }
 
 .dashboard-page__content {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: 21vw 1fr;
-  gap: 0;
+  grid-template-columns: minmax(250px, 21vw) 1fr;
 }
 
 .dashboard-page__left {
   display: flex;
   flex-direction: column;
-  gap: 1.7rem;
-  padding: 1.9rem 1.25rem;
+  gap: clamp(1rem, 2.5vw, 1.7rem);
+  padding: clamp(1rem, 2.5vw, 1.9rem) clamp(0.75rem, 2vw, 1.25rem);
   overflow: hidden;
 }
 
 .dashboard-page__right {
-  background: var(--color-background);
   height: 100%;
   border-left: 1px solid var(--color-gray-light);
-  overflow: hidden;
+  overflow: auto;
 }
 
 .dashboard-page__loading {

@@ -17,7 +17,6 @@ withDefaults(defineProps<Props>(), {
 <style scoped>
 .ui-error-message {
   color: var(--color-secondary);
-  font-family: var(--font-family);
   font-size: var(--body-font-size);
   font-weight: var(--body-font-weight);
   line-height: var(--body-line-height);
