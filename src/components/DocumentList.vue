@@ -82,4 +82,15 @@ defineEmits<{
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .document-list__cards {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .document-list__content {
+    margin-top: 12px;
+  }
+}
 </style>

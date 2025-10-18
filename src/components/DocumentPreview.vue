@@ -130,9 +130,51 @@ watch(() => document, () => {
   color: var(--color-gray-medium);
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1279px) {
   .document-preview__content{
     flex-direction: column;
+  }
+  .document-preview__image {
+    width: 65vw;
+    height: 38vh;
+  }
+}
+@media (max-width: 768px) {
+  .document-preview__content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .document-preview__image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .document-preview__actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .document-preview__description {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .document-preview {
+    padding: 20px;
+  }
+
+  .document-preview__image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .document-preview__actions {
+    flex-direction: column;
+    align-items: center;
   }
 }
 </style>

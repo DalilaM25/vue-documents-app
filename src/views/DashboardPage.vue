@@ -106,4 +106,38 @@ onMounted(() => {
   justify-content: center;
   z-index: 1000;
 }
+
+@media (max-width: 768px) {
+  .dashboard-page {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .dashboard-page__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .dashboard-page__left {
+    padding: 1rem;
+    gap: 1rem;
+    border-bottom: 1px solid var(--color-gray-light);
+  }
+
+  .dashboard-page__right {
+    border-left: none;
+    min-height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-page__left {
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .dashboard-page__content {
+    grid-template-rows: auto minmax(400px, 1fr);
+  }
+}
 </style>
