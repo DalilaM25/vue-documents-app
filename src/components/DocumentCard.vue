@@ -28,7 +28,6 @@ defineEmits<{
 <style scoped>
 .document-card {
   width: 100%;
-  height: 100%;
   border-radius: var(--border-radius);
   box-shadow: 0px 0px 10px 0px #0000001a;
   display: flex;

@@ -13,7 +13,10 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "docker:build": "docker build -t documents-app .",
+    "docker:run": "docker run -p 80:80 documents-app",
+    "docker:compose": "docker-compose up -d"
   },
   "dependencies": {
     "pinia": "^3.0.3",
