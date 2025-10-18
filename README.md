@@ -2,7 +2,7 @@
 
 ## 🚀 Демо
 
-**Live Demo:** [https://glorious-comfort-production.up.railway.app/](https://glorious-comfort-production.up.railway.app/)
+**Live Demo:** [https://documents-app-production.up.railway.app/](https://documents-app-production.up.railway.app/)
 
 ## 📋 Функциональность
 
@@ -80,7 +80,7 @@ src/
 Приложение полностью адаптивно и корректно отображается на:
 - 💻 Десктоп (1280px+)
 - 📱 Планшеты (768px - 1279px)
-
+- 📱 Мобильные устройства (320px - 767px)
 ## ✅ Выполненные требования
 
 ### Обязательные
